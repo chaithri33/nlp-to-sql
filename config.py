@@ -1,4 +1,6 @@
-MODEL_NAME = "deepseek-v4-flash"
+
+
+MODEL_NAME = "gemini-2.5-pro"
 
 MAX_ROWS = 1000
 
