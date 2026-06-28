@@ -1,0 +1,9 @@
+google-adk==2.2.0
+google-cloud-bigquery
+google-genai
+litellm
+python-dotenv
+pandas
+db-dtypes
+google-auth
+requests
