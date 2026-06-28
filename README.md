@@ -43,8 +43,6 @@ python main.py
 Create a `.env` file with your API key:
 
 ```env
-GOOGLE_API_KEY=your_gemini_api_key
-# or
 OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
@@ -52,6 +50,4 @@ OPENROUTER_API_KEY=your_openrouter_api_key
 
 > Show the top 10 users with the highest reputation.
 
-## 👤 Author
 
-**Chaithri Gopala**
