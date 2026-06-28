@@ -1,40 +1,57 @@
-# NLP to SQL Analytics Agent
+# AI-Powered Text-to-SQL Analytics Agent
 
-An Agentic AI system built using Google ADK and BigQuery.
+A multi-agent AI system built using **Google Agent Development Kit (ADK)** that converts natural language questions into secure BigQuery SQL queries. The application dynamically retrieves table schemas, generates SQL, validates queries using guardrails, and executes only safe read-only queries on BigQuery.
 
-## Features
+## ✨ Features
 
-- Natural Language to SQL
-- Dynamic BigQuery Schema Retrieval
-- SQL Guardrails
-- BigQuery Query Execution
-- Analytics Agent
-- OpenRouter Integration
+* Multi-agent architecture using Google ADK
+* Natural Language to BigQuery SQL conversion
+* Dynamic BigQuery schema retrieval
+* SQL guardrails for secure query execution
+* BigQuery integration for real-time analytics
+* Support for Gemini/OpenRouter models
 
-## Architecture
+## 🛠️ Technologies
 
-User Query
-→ Root Agent
-→ Schema Tool
-→ SQL Agent
-→ Guardrail Tool
-→ BigQuery Tool
-→ Analytics Agent
+* Python
+* Google ADK
+* Google BigQuery
+* SQL
+* Google Gemini / OpenRouter
+* Pandas
 
-## Setup
+## 🔄 Workflow
+
+1. User submits a natural language query.
+2. Root Agent orchestrates the workflow.
+3. Schema Agent retrieves the table schema.
+4. NLP Agent generates the SQL query.
+5. Guardrail Tool validates the generated SQL.
+6. BigQuery Tool executes the query and returns the results.
+
+## 🔒 Security
+
+The system executes only read-only SQL queries. Operations such as **UPDATE, DELETE, INSERT, DROP, ALTER, CREATE, MERGE,** and **TRUNCATE** are blocked before execution.
+
+## 🚀 Getting Started
 
 ```bash
 pip install -r requirements.txt
-```
-
-Create `.env`
-
-```env
-OPENROUTER_API_KEY=your_key
-```
-
-Run:
-
-```bash
 python main.py
 ```
+
+Create a `.env` file with your API key:
+
+```env
+GOOGLE_API_KEY=your_gemini_api_key
+# or
+OPENROUTER_API_KEY=your_openrouter_api_key
+```
+
+## 📌 Sample Query
+
+> Show the top 10 users with the highest reputation.
+
+## 👤 Author
+
+**Chaithri Gopala**
